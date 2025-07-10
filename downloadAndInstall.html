@@ -1,1 +1,811 @@
+<html lang="en">
 
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        Printer Setup
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+
+    <!-- Header -->
+    <header class="w-full bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3 relative">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-print text-xl text-blue-700"></i>
+                <span class="font-bold text-blue-700 text-sm sm:text-base">PRINTER</span>
+                <span class="font-bold text-gray-900 text-sm sm:text-base">SETUP</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6 text-xs sm:text-sm text-gray-700 font-semibold">
+                <li><a href="#" class="hover:text-blue-700">Home</a></li>
+                <li><a href="#" class="hover:text-blue-700">About Us</a></li>
+                <li><a href="#" class="hover:text-blue-700">Services</a></li>
+                <li><a href="#" class="hover:text-blue-700">Solutions</a></li>
+                <li><a href="#" class="hover:text-blue-700">Contact Us</a></li>
+            </ul>
+
+            <!-- Chat Button Desktop -->
+            <a href="#"
+                onclick="toggleChat()"
+                class="hidden md:inline-block bg-blue-500 hover:bg-blue-600 text-white text-xs sm:text-sm font-semibold rounded-full px-5 py-2 transition">
+                Chat Now
+            </a>
+
+            <!-- Hamburger for mobile -->
+            <button id="navToggle" class="md:hidden text-gray-800 text-2xl focus:outline-none">
+                ☰
+            </button>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu"
+                class="hidden absolute top-full left-0 w-full bg-white border-t border-gray-200 z-50 shadow-md px-6 py-4">
+                <ul class="flex flex-col space-y-4 mb-4 text-sm font-semibold text-gray-700">
+                    <li><a href="#" class="hover:text-blue-700">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-700">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Services</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Solutions</a></li>
+                    <li><a href="#" class="hover:text-blue-700">Contact Us</a></li>
+                </ul>
+                        <a href="#"
+                            onclick="toggleChat()"
+                            class="bg-blue-500 hover:bg-blue-600 text-white text-center p-2 rounded-full transition">Chat
+                            Now
+                        </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0">
+            <div class="max-w-xl md:max-w-lg space-y-4">
+                <h1 class="font-extrabold text-2xl sm:text-3xl leading-tight uppercase">
+                    SET UP PRINTER BY INSTALLING DRIVERS
+                </h1>
+                <p class="uppercase text-xs sm:text-sm font-semibold tracking-wide">
+                    DOWNLOAD &amp; INSTALL PRINTER SOFTWARE
+                </p>
+                <ul class="list-disc list-inside text-xs sm:text-sm space-y-1 font-semibold">
+                    <li>
+                        Watch your printer experience on
+                    </li>
+                    <li>
+                        Click on download &amp; install the drivers
+                    </li>
+                </ul>
+                <div class="flex space-x-4 mt-4">
+                    <button onclick="openModal()"
+                        class="flex items-center space-x-2 bg-white text-blue-600 font-semibold text-xs sm:text-sm rounded-full px-5 py-2 hover:bg-gray-100 transition">
+                        <i class="fas fa-download">
+                        </i>
+                        <span>
+                            Download Latest Drivers
+                        </span>
+                    </button>
+                    <button
+                        class="flex items-center space-x-2 bg-white text-blue-600 font-semibold text-xs sm:text-sm rounded-full px-5 py-2 hover:bg-gray-100 transition">
+                        <i class="fas fa-plus">
+                        </i>
+                        <span>
+                            New Printer Setup
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="flex space-x-6 items-center justify-center">
+                <img alt="Front view of a black printer with paper tray" class="w-36 sm:w-44 md:w-48" height="100"
+                    src="https://storage.googleapis.com/a1aa/image/cbd2231e-59e8-4fbf-16cd-e7f40663a4f0.jpg"
+                    width="150" />
+                <div class="flex flex-col space-y-4">
+                    <img alt="Side view of a black printer with paper output" class="w-24 sm:w-28 md:w-32" height="60"
+                        src="https://storage.googleapis.com/a1aa/image/9942f793-cf73-4c01-094b-98924043b712.jpg"
+                        width="100" />
+                    <img alt="Side view of a white and black printer stacked" class="w-24 sm:w-28 md:w-32" height="60"
+                        src="https://storage.googleapis.com/a1aa/image/cb20193e-3873-49d4-681f-ca242b1b32b5.jpg"
+                        width="100" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Quick Download Drivers Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="md:col-span-2 space-y-2">
+            <h2 class="font-semibold text-sm sm:text-base">
+                Quick Download Drivers
+            </h2>
+            <p class="text-xs sm:text-sm text-gray-600">
+                Fill the form and download your printer driver
+            </p>
+            <form class="mt-2 flex space-x-2 max-w-md">
+                <input
+                    class="flex-grow border border-gray-300 rounded-md px-3 py-2 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Model #" type="text" />
+                <button onclick="openModal()"
+                    class="bg-blue-600 text-white text-xs sm:text-sm font-semibold rounded-md px-4 py-2 hover:bg-blue-700 transition"
+                    type="submit">
+                    Download Latest Drivers
+                </button>
+            </form>
+        </div>
+        <div class="flex flex-col items-center space-y-3">
+            <img alt="Printer with paper coming out and model number example" class="w-48 sm:w-56" height="120"
+                src="https://storage.googleapis.com/a1aa/image/60fbbf58-f1c7-4fe5-0b63-00f9c09c82bf.jpg" width="200" />
+            <button
+                class="border border-gray-400 text-gray-700 text-xs sm:text-sm font-semibold rounded-md px-4 py-1 hover:bg-gray-100 transition">
+                MODEL XX-XXXX
+            </button>
+        </div>
+    </section>
+    <!-- How Our Technicians Assist Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <h3 class="font-semibold text-center text-sm sm:text-base mb-8">
+            How Our Technicians Assist with Printer Support
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-blue-600 text-white rounded-lg p-5 space-y-2">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-user-cog text-lg">
+                    </i>
+                    <h4 class="font-semibold text-xs sm:text-sm">
+                        Expert Printer Setup
+                    </h4>
+                </div>
+                <p class="text-xs sm:text-sm leading-tight">
+                    Our experts provide complete printer setup and installation support. We can start your printer
+                    installation.
+                </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-blue-600 text-white rounded-lg p-5 space-y-2">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-signal text-lg">
+                    </i>
+                    <h4 class="font-semibold text-xs sm:text-sm">
+                        Effortless Network Integration
+                    </h4>
+                </div>
+                <p class="text-xs sm:text-sm leading-tight">
+                    Configure your networking related connection issues, get help here to get printer to network
+                    connection from any device.
+                </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-blue-600 text-white rounded-lg p-5 space-y-2">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-headset text-lg">
+                    </i>
+                    <h4 class="font-semibold text-xs sm:text-sm">
+                        Uninterrupted Technical Support
+                    </h4>
+                </div>
+                <p class="text-xs sm:text-sm leading-tight">
+                    24/7 support available, printer setup issues, networking and troubleshooting whenever you need it.
+                </p>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-blue-600 text-white rounded-lg p-5 space-y-2">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-check-circle text-lg">
+                    </i>
+                    <h4 class="font-semibold text-xs sm:text-sm">
+                        Regular Servicing and Inspections
+                    </h4>
+                </div>
+                <p class="text-xs sm:text-sm leading-tight">
+                    We schedule service to keep your printer performing at its best. Avoid costly breakdowns, prevent
+                    issues and extend printer life.
+                </p>
+            </div>
+            <!-- Card 5 -->
+            <div class="bg-blue-600 text-white rounded-lg p-5 space-y-2">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-print text-lg">
+                    </i>
+                    <h4 class="font-semibold text-xs sm:text-sm">
+                        Enhanced Print Efficiency
+                    </h4>
+                </div>
+                <p class="text-xs sm:text-sm leading-tight">
+                    Improve print speed and quality to extend your printer’s life and reduce downtime and costs.
+                </p>
+            </div>
+            <!-- Card 6 -->
+            <div class="bg-blue-600 text-white rounded-lg p-5 space-y-2">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-cogs text-lg">
+                    </i>
+                    <h4 class="font-semibold text-xs sm:text-sm">
+                        Personalized Printer Configurations
+                    </h4>
+                </div>
+                <p class="text-xs sm:text-sm leading-tight">
+                    Customize printer settings to suit your requirements for a better and friendly device user
+                    experience.
+                </p>
+            </div>
+            <!-- Card 7 -->
+            <div class="bg-blue-600 text-white rounded-lg p-5 space-y-2">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-tools text-lg">
+                    </i>
+                    <h4 class="font-semibold text-xs sm:text-sm">
+                        Professional Printer Repair Services
+                    </h4>
+                </div>
+                <p class="text-xs sm:text-sm leading-tight">
+                    Our experts quickly resolve printer issues with the best service. Allow us to fix your printer,
+                    restore its operational condition.
+                </p>
+            </div>
+            <!-- Card 8 -->
+            <div class="bg-blue-600 text-white rounded-lg p-5 space-y-2">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-tint text-lg">
+                    </i>
+                    <h4 class="font-semibold text-xs sm:text-sm">
+                        Ink and Toner Optimization
+                    </h4>
+                </div>
+                <p class="text-xs sm:text-sm leading-tight">
+                    Keep filling toner cartridges and ink refills to save costs and improve print quality with our
+                    expert advice and solutions.
+                </p>
+            </div>
+            <!-- Card 9 -->
+            <div class="bg-blue-600 text-white rounded-lg p-5 space-y-2">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-shield-alt text-lg">
+                    </i>
+                    <h4 class="font-semibold text-xs sm:text-sm">
+                        Enhanced Security Measures
+                    </h4>
+                </div>
+                <p class="text-xs sm:text-sm leading-tight">
+                    Protect your printer and network with advanced security configurations to prevent data breaches and
+                    attacks.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Hassle-Free Printer Setup Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+            <h4 class="font-semibold text-blue-700 text-sm sm:text-base mb-2">
+                Hassle-Free Printer Setup with IT GEEKS
+            </h4>
+            <p class="text-xs sm:text-sm text-gray-700">
+                Fast, Reliable and Expert IT GEEK Printer Setup. Ready to Print in No Time!
+            </p>
+        </div>
+        <div class="text-xs sm:text-sm text-gray-700 space-y-4">
+            <h5 class="font-semibold text-gray-900 mb-1">
+                Why Choose IT GEEKS for Your Printer Setup?
+            </h5>
+            <ul class="list-disc list-inside space-y-1">
+                <li>
+                    <span class="font-semibold">
+                        Certified Technicians:
+                    </span>
+                    Skilled in printer setup and troubleshooting, ensuring your printer works perfectly.
+                </li>
+                <li>
+                    <span class="font-semibold">
+                        24/7 Availability:
+                    </span>
+                    Our team can help anytime, responding to your needs quickly and efficiently.
+                </li>
+                <li>
+                    <span class="font-semibold">
+                        Effortless Connectivity:
+                    </span>
+                    We ensure your printer connects seamlessly to your device - computers, phones, and more.
+                </li>
+                <li>
+                    <span class="font-semibold">
+                        Hassle-Free Setup:
+                    </span>
+                    Installation, software updates, and networking done right, so you can focus on your work.
+                </li>
+                <li>
+                    <span class="font-semibold">
+                        Honest Pricing:
+                    </span>
+                    No surprises or hidden charges - just reliable service at a fair price.
+                </li>
+            </ul>
+        </div>
+        <div class="bg-gray-50 rounded-md p-4 text-xs sm:text-sm text-gray-700 space-y-4">
+            <h5 class="font-semibold text-gray-900">
+                Common Printer Setup Issues We Solve
+            </h5>
+            <ul class="list-disc list-inside space-y-1">
+                <li>
+                    Printer not recognized by your PC or network
+                </li>
+                <li>
+                    Unable to print from multiple devices
+                </li>
+                <li>
+                    Setup errors and incorrect printer installation
+                </li>
+                <li>
+                    Settings or permissions issues preventing printing
+                </li>
+            </ul>
+            <h5 class="font-semibold text-gray-900 mt-4">
+                Getting Started with IT GEEKS Is Simple
+            </h5>
+            <ol class="list-decimal list-inside space-y-1">
+                <li>
+                    <span class="font-semibold">
+                        Reach Out:
+                    </span>
+                    Start a conversation instantly via our Live Chat.
+                </li>
+                <li>
+                    <span class="font-semibold">
+                        Quick Troubleshooting:
+                    </span>
+                    We will help you quickly diagnose the issue or dispatch an expert to assist.
+                </li>
+                <li>
+                    <span class="font-semibold">
+                        Start Printing:
+                    </span>
+                    We’ll help you set up and get printing with a guaranteed satisfaction.
+                </li>
+            </ol>
+        </div>
+    </section>
+    <!-- Steps to Set Up a Printer Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-gray-50 rounded-md mb-10">
+        <h4 class="bg-blue-600 text-white text-center font-semibold text-sm sm:text-base py-2 rounded-md mb-6">
+            STEPS TO SET UP A PRINTER
+        </h4>
+        <div class="text-xs sm:text-sm text-gray-700 space-y-6 max-w-4xl mx-auto">
+            <div>
+                <h5 class="font-semibold mb-1">
+                    1. Unbox and Prepare Your Printer
+                </h5>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>
+                        Remove all packaging materials, tape, and protective covers from the printer.
+                    </li>
+                    <li>
+                        Install the ink or toner cartridges and load paper into the input tray.
+                    </li>
+                    <li>
+                        Plug in the power cord and turn on the printer using the power button.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-semibold mb-1">
+                    2. Select a Connection Type
+                </h5>
+                <p class="font-semibold mb-1">
+                    A. USB Connection (Wired)
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        Connect the printer to your computer using the provided USB cable.
+                    </li>
+                    <li>
+                        Turn the printer on.
+                    </li>
+                    <li>
+                        Your computer should detect the printer and install the needed drivers automatically.
+                    </li>
+                </ul>
+                <p class="font-semibold mt-3 mb-1">
+                    B. Wireless (Wi-Fi) Connection
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        Ensure the printer is Wi-Fi enabled and powered on.
+                    </li>
+                    <li>
+                        Access the printer’s control panel and select the wireless setup wizard.
+                    </li>
+                    <li>
+                        Connect the printer to your Wi-Fi network by selecting your network and entering the password.
+                    </li>
+                </ul>
+                <p class="font-semibold mt-3 mb-1">
+                    C. Ethernet (Wired Network) Connection
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        Use an Ethernet cable to connect the printer to your router or network switch.
+                    </li>
+                    <li>
+                        Turn the printer on.
+                    </li>
+                    <li>
+                        Print a network configuration page to verify successful network connection.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-semibold mb-1">
+                    3. Install Printer Drivers and Software
+                </h5>
+                <p class="font-semibold mb-1">
+                    A. Automatic Installation (Windows)
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        When connected, Windows will automatically detect and install the appropriate drivers and
+                        software.
+                    </li>
+                    <li>
+                        If not, download the latest drivers from the manufacturer’s website and install them manually.
+                    </li>
+                </ul>
+                <p class="font-semibold mt-3 mb-1">
+                    B. Manual Installation (Windows &amp; macOS)
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        Download the latest drivers and software from the manufacturer’s website.
+                    </li>
+                    <li>
+                        Run the setup file and follow the on-screen instructions to complete installation.
+                    </li>
+                    <li>
+                        After installation, restart your computer if prompted.
+                    </li>
+                </ul>
+                <p class="font-semibold mt-3 mb-1">
+                    C. Set up via Printer’s App (Wireless Printers)
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        Download the printer manufacturer’s app from your device’s app store.
+                    </li>
+                    <li>
+                        Use the app to connect your printer to the wireless network and complete the setup process.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-semibold mb-1">
+                    4. Set Your Printer as the Default (Optional)
+                </h5>
+                <p class="font-semibold mb-1">
+                    For Windows
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        Open “Settings” and select “Printers &amp; Scanners.”
+                    </li>
+                    <li>
+                        Choose your printer and click “Set as default.”
+                    </li>
+                </ul>
+                <p class="font-semibold mb-1">
+                    For macOS
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        Open the Apple menu &gt; System Preferences &gt; Printers &amp; Scanners.
+                    </li>
+                    <li>
+                        Select your printer from the list and set it as the default printer.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-semibold mb-1">
+                    5. Print a Test Page
+                </h5>
+                <p class="font-semibold mb-1">
+                    For Windows
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        Open “Settings” &gt; “Devices” &gt; “Printers &amp; Scanners.”
+                    </li>
+                    <li>
+                        Select your printer and click “Manage,” then choose “Print a test page.”
+                    </li>
+                </ul>
+                <p class="font-semibold mb-1">
+                    For macOS
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        Open “System Preferences” &gt; “Printers &amp; Scanners.”
+                    </li>
+                    <li>
+                        Choose your printer and click “Open Print Queue.”
+                    </li>
+                    <li>
+                        From the “Printer” menu, select “Print Test Page.”
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-semibold mb-1">
+                    6. Optional: Customize Your Printer Settings
+                </h5>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        Adjust print quality, paper size, and layout preferences to match your needs.
+                    </li>
+                    <li>
+                        Access all settings from the printer driver or printing preferences on your computer.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-semibold mb-1">
+                    Troubleshooting Tips
+                </h5>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>
+                        Ensure the printer is turned on and connected to power and your device.
+                    </li>
+                    <li>
+                        Run the printer troubleshooter if the printer is not responding.
+                    </li>
+                    <li>
+                        Turn off and on the printer to reset it.
+                    </li>
+                    <li>
+                        Check the printer’s manual or website for error codes and solutions.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Callout -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+        <div class="bg-blue-600 text-white rounded-md py-6 px-6 text-center text-xs sm:text-sm font-semibold">
+            Get in Touch with IT GEEKS – Your Reliable Printer Setup Experts!
+            <br />
+            Any questions or printer issues, reach out to IT GEEKS. We’re here to provide expert printer setup services
+            24/7.
+            <br />
+            <a class="underline hover:text-gray-200" href="#">
+                Live Chat: Start a Session
+            </a>
+        </div>
+    </section>
+    <!-- Footer Text -->
+    <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 text-xs text-gray-600 leading-tight">
+        <p>
+            Printer setup is a critical step to ensure your printer works efficiently and reliably. Whether you are
+            setting up a new printer or reinstalling drivers, following the correct steps can save you time and
+            frustration. Our expert technicians at IT GEEKS are here to assist you with every step of the process, from
+            unboxing to troubleshooting. We provide comprehensive support for all printer brands and models, ensuring
+            you get the best performance from your device. Contact us anytime for professional help and advice.
+        </p>
+    </footer>
+    <!-- Bottom Bar -->
+    <div class="bg-gray-100 text-gray-700 text-xs text-center py-3">
+        IT GEEKS © All Rights Reserved.
+        <span class="ml-4 underline cursor-pointer hover:text-blue-600">
+            Privacy Policy
+        </span>
+    </div>
+
+
+
+    <!-- Chatbot Floating Button -->
+    <button onclick="toggleChat()" id="chatToggle"
+        class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg text-xl z-50 hover:bg-blue-700 transition-all duration-300">
+        💬
+    </button>
+
+    <!-- Chatbot Popup Box -->
+    <div id="chatBox"
+        class="fixed bottom-20 right-6 bg-white w-72 rounded-lg shadow-xl p-4 hidden z-50 border border-blue-300">
+        <div class="font-bold text-blue-600 mb-2">HP Virtual Assistant</div>
+        <div id="chatMessages" class="text-sm text-gray-800 h-40 overflow-y-auto border rounded p-2 mb-2 bg-gray-50">
+            <div class="mb-1"><strong>Bot:</strong> Hello! Need help with your printer?</div>
+        </div>
+        <div class="flex items-center gap-1">
+            <input type="text" id="userInput" placeholder="Type your message..."
+                class="flex-1 border rounded px-2 py-1 text-sm" />
+            <button onclick="sendMessage()"
+                class="bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600">Send</button>
+        </div>
+    </div>
+
+
+
+    <!-- Modal HTML -->
+    <div id="driverModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg max-w-md w-full p-6 shadow-xl relative">
+            <button onclick="closeModal()"
+                class="absolute top-2 right-3 text-gray-500 text-xl font-bold">&times;</button>
+
+            <div id="modalContent">
+                <h2 class="text-xl font-bold text-center text-blue-700 mb-4">Download and Install Latest Drivers</h2>
+                <input id="printerModel" type="text" placeholder="Ex. HP LaserJet M602"
+                    class="w-full p-2 border rounded mb-2 text-sm" />
+                <p class="text-xs italic text-gray-500 mb-4">Enter model or leave blank to continue.</p>
+                <button onclick="startDownload()"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded font-semibold">
+                    DOWNLOAD NOW →
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<!-- Script -->
+<script>
+
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    navToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    const chatBox = document.getElementById("chatBox");
+    const chatToggle = document.getElementById("chatToggle");
+    const chatMessages = document.getElementById("chatMessages");
+    const userInput = document.getElementById("userInput");
+
+    // Toggle manually on button click
+    function toggleChat() {
+        chatBox.classList.toggle("hidden");
+    }
+
+    // Automatically open after 5 seconds
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            chatBox.classList.remove("hidden");
+        }, 5000);
+    });
+
+    // Send message logic
+    function sendMessage() {
+        const message = userInput.value.trim();
+        if (message) {
+            chatMessages.innerHTML += `<div class="mb-1"><strong>You:</strong> ${message}</div>`;
+            setTimeout(() => {
+                chatMessages.innerHTML += `<div class="mb-1"><strong>Bot:</strong> 📞 <a href="tel:+18333193003" class="text-blue-600 font-bold underline">Click here to call +1-833-319-3003</a> for immediate help.</div>`;
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 500);
+            userInput.value = "";
+        }
+    }
+
+
+    const modal = document.getElementById("driverModal");
+    const content = document.getElementById("modalContent");
+
+    function openModal() {
+        modal.classList.remove("hidden");
+        const status = localStorage.getItem("installStatus");
+        if (status === "failed") showFailed();
+    }
+
+    function closeModal() {
+        modal.classList.add("hidden");
+    }
+
+    function startDownload() {
+        content.innerHTML = `
+      <h2 class="text-xl font-bold text-center text-blue-700 mb-4">DOWNLOADING & INSTALLING DRIVERS</h2>
+      <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden mb-2">
+        <div id="downloadBar" class="bg-green-500 h-4 w-0 transition-all duration-300 ease-linear"></div>
+      </div>
+      <p id="downloadText" class="text-center text-sm font-medium text-gray-800 mb-4">Downloading... 0%</p>
+      <div class="text-center">
+        <img src="https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif" class="mx-auto h-16" alt="Loading..." />
+        <p class="text-xs text-gray-500 mt-2">page loading...</p>
+      </div>
+    `;
+
+        let progress = 0;
+        const interval = setInterval(() => {
+            if (progress < 100) {
+                progress += 10;
+                document.getElementById("downloadBar").style.width = `${progress}%`;
+                document.getElementById("downloadText").innerText = `Downloading... ${progress}%`;
+            } else {
+                clearInterval(interval);
+                setTimeout(() => startInstalling(), 1000);
+            }
+        }, 300);
+    }
+
+    function startInstalling() {
+        content.innerHTML = `
+      <h2 class="text-xl font-bold text-center text-blue-700 mb-4">DOWNLOADING & INSTALLING DRIVERS</h2>
+      <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden mb-2">
+        <div class="bg-green-500 h-4 w-full"></div>
+      </div>
+      <p class="text-sm text-center font-medium text-gray-800 mb-4">Downloading... 100% (completed)</p>
+      
+      <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden mb-2">
+        <div id="installBar" class="bg-green-500 h-4 w-0 transition-all duration-300 ease-linear"></div>
+      </div>
+      <p id="installText" class="text-center text-sm font-medium text-gray-800 mb-4">Installing... 0%</p>
+
+      <div class="text-center">
+        <img src="https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif" class="mx-auto h-16" alt="Loading..." />
+        <p class="text-xs text-gray-500 mt-2">page loading...</p>
+      </div>
+    `;
+
+        let progress = 0;
+        const interval = setInterval(() => {
+            if (progress < 80) {
+                progress += 10;
+                document.getElementById("installBar").style.width = `${progress}%`;
+                document.getElementById("installText").innerText = `Installing... ${progress}%`;
+            } else {
+                clearInterval(interval);
+                setTimeout(() => showFailed(), 1000);
+            }
+        }, 400);
+    }
+
+    function showFailed() {
+        localStorage.setItem("installStatus", "failed");
+        content.innerHTML = `
+      <h2 class="text-2xl font-bold text-center text-red-600 mb-4">INSTALLATION FAILED!</h2>
+
+      <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden mb-2">
+        <div class="bg-green-500 h-4 w-full"></div>
+      </div>
+      <p class="text-center font-medium text-gray-700">Downloading... 100% (completed)</p>
+      
+      <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden my-2">
+        <div class="bg-red-600 h-4 w-[80%]"></div>
+      </div>
+      <p class="text-center font-medium text-red-600">Installation failed.</p>
+
+      <div class="text-center my-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724715.png" class="h-16 mx-auto mb-2" />
+        <p class="text-center text-sm text-gray-700">
+          Printer driver installation has failed due to <span class="text-red-600 font-semibold">fatal error
+          "C0000022"</span> preventing product driver installation.
+        </p>
+      </div>
+
+      <div class="text-center mt-4">
+        <button onclick="callSupport()"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition">
+          📞 Talk to our live Technicians
+        </button>
+      </div>
+    `;
+    }
+
+    function callSupport() {
+        window.location.href = "tel:+18333193003"
+    }
+
+    window.onload = () => {
+        if (!location.hash.includes("keep")) {
+            localStorage.removeItem("installStatus");
+        }
+    };
+</script>
+
+</html>
