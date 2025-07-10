@@ -1,0 +1,693 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+    Easy Printer Setup
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Top controls -->
+    <div class="flex justify-between items-center py-4 text-sm text-gray-600">
+      <div class="flex space-x-4">
+        <div class="flex items-center space-x-1">
+          <div
+            class="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-semibold">
+            1
+          </div>
+          <span>
+            Activate
+          </span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <div
+            class="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-semibold">
+            2
+          </div>
+          <span>
+            Install
+          </span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <div
+            class="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-semibold">
+            3
+          </div>
+          <span>
+            Load
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Header section -->
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-12 py-6">
+      <div class="md:w-1/2">
+        <h1 class="text-blue-600 font-semibold text-xl md:text-2xl mb-2">
+          EASY PRINTER SETUP
+        </h1>
+        <p class="text-xs md:text-sm font-semibold mb-1">
+          Power your printer setup
+        </p>
+        <p class="text-xs md:text-sm mb-4">
+          This is the easiest printer setup, designed to get you up and running quickly and hassle-free.
+        </p>
+        <button
+          class="bg-cyan-400 text-black text-xs md:text-sm font-semibold px-5 py-2 rounded shadow-md hover:bg-cyan-500 transition">
+          <a href="index.html">
+            Click Here For Printer Setup
+          </a>
+        </button>
+
+      </div>
+      <!-- coursel -->
+      <div class="relative w-full max-w-md mx-auto overflow-hidden rounded-xl shadow-lg">
+        <!-- Image Container -->
+        <div id="carousel" class="flex transition-transform duration-500 ease-in-out" style="transform: translateX(0%)">
+          <img src="https://storage.googleapis.com/a1aa/image/3833f484-bbfc-45c8-aa36-9678751f87b5.jpg"
+            alt="Printer Image 1" class="w-full flex-shrink-0 object-cover h-[220px] sm:h-[280px] md:h-[320px]" />
+          <img src="https://images.unsplash.com/photo-1588702547923-7093a6c3ba33" alt="Printer Image 2"
+            class="w-full flex-shrink-0 object-cover h-[220px] sm:h-[280px] md:h-[320px]" />
+        </div>
+
+        <!-- Left Button -->
+        <button onclick="prevSlide()"
+          class="absolute top-1/2 left-2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-90 text-gray-800 font-bold text-lg px-3 py-1 rounded-full shadow">
+          &#8249;
+        </button>
+
+        <!-- Right Button -->
+        <button onclick="nextSlide()"
+          class="absolute top-1/2 right-2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-90 text-gray-800 font-bold text-lg px-3 py-1 rounded-full shadow">
+          &#8250;
+        </button>
+      </div>
+    </div>
+
+    <!-- Enhanced Printer Type Icons Section -->
+    <section class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-center text-2xl sm:text-3xl font-bold text-blue-800 mb-10">Common Printer Issues & Setup Types
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 justify-items-center">
+          <!-- Icon Button -->
+          <button onclick="contactusLInk()"
+            class="bg-white shadow-md hover:shadow-xl hover:scale-105 transform transition p-4 w-full max-w-[100px] flex flex-col items-center rounded-lg border border-gray-100">
+            <img src="https://storage.googleapis.com/a1aa/image/a307e48d-2026-41f5-d360-65e59fb9b226.jpg"
+              alt="Portable Setup" class="h-10 mb-2" />
+            <span class="text-xs font-medium text-center text-gray-700">Portable Setup</span>
+          </button>
+
+          <button onclick="contactusLInk()"
+            class="bg-white shadow-md hover:shadow-xl hover:scale-105 transform transition p-4 w-full max-w-[100px] flex flex-col items-center rounded-lg border border-gray-100">
+            <img src="https://storage.googleapis.com/a1aa/image/f7015738-b97d-4e6b-a681-78c44382b77f.jpg"
+              alt="Printer Offline" class="h-10 mb-2" />
+            <span class="text-xs font-medium text-center text-gray-700">Printer Offline</span>
+          </button>
+
+          <button onclick="contactusLInk()"
+            class="bg-white shadow-md hover:shadow-xl hover:scale-105 transform transition p-4 w-full max-w-[100px] flex flex-col items-center rounded-lg border border-gray-100">
+            <img src="https://storage.googleapis.com/a1aa/image/6f8f6e4c-e5f8-4959-06cb-fa0aa6bace33.jpg"
+              alt="Wireless Setup" class="h-10 mb-2" />
+            <span class="text-xs font-medium text-center text-gray-700">Wireless Setup</span>
+          </button>
+
+          <button onclick="contactusLInk()"
+            class="bg-white shadow-md hover:shadow-xl hover:scale-105 transform transition p-4 w-full max-w-[100px] flex flex-col items-center rounded-lg border border-gray-100">
+            <img src="https://storage.googleapis.com/a1aa/image/83db0b8b-6dbe-4864-8ef2-63cec80b7dc5.jpg"
+              alt="Paper Jam" class="h-10 mb-2" />
+            <span class="text-xs font-medium text-center text-gray-700">Paper Jam</span>
+          </button>
+
+          <button onclick="contactusLInk()"
+            class="bg-white shadow-md hover:shadow-xl hover:scale-105 transform transition p-4 w-full max-w-[100px] flex flex-col items-center rounded-lg border border-gray-100">
+            <img src="https://storage.googleapis.com/a1aa/image/c2aba8a4-3bc6-430b-1a2c-4f08dc1891ad.jpg"
+              alt="Stuck Queue" class="h-10 mb-2" />
+            <span class="text-xs font-medium text-center text-gray-700">Stuck in Queue</span>
+          </button>
+
+          <button onclick="contactusLInk()"
+            class="bg-white shadow-md hover:shadow-xl hover:scale-105 transform transition p-4 w-full max-w-[100px] flex flex-col items-center rounded-lg border border-gray-100">
+            <img src="https://storage.googleapis.com/a1aa/image/92cf61a6-5300-4b40-a206-6b6691f11f33.jpg"
+              alt="Scanner Issue" class="h-10 mb-2" />
+            <span class="text-xs font-medium text-center text-gray-700">Scanner Issue</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Enhanced Print Obstacles Section -->
+    <section class="py-12 bg-blue-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold text-orange-500 mb-2">New! <span class="text-gray-800">Unravel Your
+            Print Obstacles</span></h2>
+        <p class="text-sm text-gray-700 max-w-3xl mx-auto mb-8">
+          <span class="text-orange-500 font-semibold">Smart Cloud-based Print Setup</span> helps businesses seamlessly
+          manage remote offices, troubleshoot printing issues, and reduce print-related downtime — ensuring continuous
+          productivity across all your print environments.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+          <img src="https://storage.googleapis.com/a1aa/image/d14b73a9-6068-4322-18aa-c51e925081e8.jpg"
+            alt="Setup Interface" class="rounded-xl shadow-md w-full max-w-xs object-cover" />
+          <img src="https://storage.googleapis.com/a1aa/image/578f86b1-ff12-4605-4ea5-9c9adc733b3e.jpg"
+            alt="Printer Setup Options" class="rounded-xl shadow-md w-full max-w-xs object-cover" />
+          <img src="https://storage.googleapis.com/a1aa/image/84e22303-d1b3-44d3-e003-81c8b2b632cf.jpg"
+            alt="Setup Confirmation Screen" class="rounded-xl shadow-md w-full max-w-xs object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Features Grid -->
+    <section class="py-12 bg-gradient-to-b from-blue-50 to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center text-blue-800 mb-10">Smart Print Management Features</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Feature Card -->
+          <div
+            class="bg-white hover:shadow-xl transition rounded-xl p-5 flex flex-col items-start border-t-4 border-blue-600">
+            <i class="fas fa-print text-blue-600 text-3xl mb-3"></i>
+            <h3 class="font-bold text-sm mb-2">Remote Business App Printing</h3>
+            <p class="text-xs text-gray-600">Print from mobile devices and cloud apps to any printer — no VPN required.
+            </p>
+          </div>
+          <!-- Feature Card -->
+          <div
+            class="bg-white hover:shadow-xl transition rounded-xl p-5 flex flex-col items-start border-t-4 border-blue-600">
+            <i class="fas fa-cogs text-blue-600 text-3xl mb-3"></i>
+            <h3 class="font-bold text-sm mb-2">Fast Office Setup</h3>
+            <p class="text-xs text-gray-600">Deploy printers across new office locations quickly with minimal IT
+              support.</p>
+          </div>
+          <!-- Feature Card -->
+          <div
+            class="bg-white hover:shadow-xl transition rounded-xl p-5 flex flex-col items-start border-t-4 border-blue-600">
+            <i class="fas fa-map-marker-alt text-blue-600 text-3xl mb-3"></i>
+            <h3 class="font-bold text-sm mb-2">Third-Party Printing</h3>
+            <p class="text-xs text-gray-600">Print securely to offsite or partner locations with centralized controls.
+            </p>
+          </div>
+          <!-- Feature Card -->
+          <div
+            class="bg-white hover:shadow-xl transition rounded-xl p-5 flex flex-col items-start border-t-4 border-blue-600">
+            <i class="fas fa-home text-blue-600 text-3xl mb-3"></i>
+            <h3 class="font-bold text-sm mb-2">Secure Home Printing</h3>
+            <p class="text-xs text-gray-600">Track and secure print jobs from remote workers to maintain compliance.</p>
+          </div>
+          <!-- Feature Card -->
+          <div
+            class="bg-white hover:shadow-xl transition rounded-xl p-5 flex flex-col items-start border-t-4 border-blue-600">
+            <i class="fas fa-shield-alt text-blue-600 text-3xl mb-3"></i>
+            <h3 class="font-bold text-sm mb-2">Enterprise-Grade Security</h3>
+            <p class="text-xs text-gray-600">Encrypt and authenticate every print job to keep your data secure.</p>
+          </div>
+          <!-- Feature Card -->
+          <div
+            class="bg-white hover:shadow-xl transition rounded-xl p-5 flex flex-col items-start border-t-4 border-blue-600">
+            <i class="fas fa-tools text-blue-600 text-3xl mb-3"></i>
+            <h3 class="font-bold text-sm mb-2">Scalable Integration</h3>
+            <p class="text-xs text-gray-600">Add users and connect to existing infrastructure with ease.</p>
+          </div>
+          <!-- Feature Card -->
+          <div
+            class="bg-white hover:shadow-xl transition rounded-xl p-5 flex flex-col items-start border-t-4 border-blue-600">
+            <i class="fas fa-file-alt text-blue-600 text-3xl mb-3"></i>
+            <h3 class="font-bold text-sm mb-2">Unified Print Experience</h3>
+            <p class="text-xs text-gray-600">Ensure consistent output quality and usability across all locations.</p>
+          </div>
+          <!-- Feature Card -->
+          <div
+            class="bg-white hover:shadow-xl transition rounded-xl p-5 flex flex-col items-start border-t-4 border-blue-600">
+            <i class="fas fa-users-cog text-blue-600 text-3xl mb-3"></i>
+            <h3 class="font-bold text-sm mb-2">Optimized Workflows</h3>
+            <p class="text-xs text-gray-600">Automate print job routing and improve productivity with smart management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Print Anywhere and Anytime -->
+    <div class="max-w-5xl mx-auto py-10 px-4 text-center md:text-left">
+      <h2 class="text-blue-600 font-semibold text-lg md:text-xl mb-2">
+        Print Anywhere and Anytime
+      </h2>
+      <h3 class="font-semibold text-base md:text-lg mb-4">
+        Maximize Your Printer with Updated Drivers
+      </h3>
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+        <img alt="Hand holding a smartphone with wireless signal icon next to a blue printer" class="w-36 md:w-40"
+          height="120" src="https://storage.googleapis.com/a1aa/image/f0fac85e-2714-444b-e591-a40f1313751a.jpg"
+          width="150" />
+        <div class="text-xs text-gray-700 max-w-xl">
+          Smart Printer Setup is your all-in-one solution to help, monitor, and print from any desktop, laptop, or
+          mobile device. We use smart tools to quickly fix the issues in the network to be resolved as well as Windows
+          and other platforms at all times. Our software detects connected printers and is ideal for both home and
+          workplace use. Also, Smart Printer Setup ensures the technology is accessible, easy, and simple to use for
+          everyone in the office, guaranteeing your print requirements are met now and in the future.
+          <br />
+          <br />
+          A cloud-based solution that enables businesses to troubleshoot issues in the workplace even if you want to
+          access remote offices, manage your enterprise printing, and reduce print-related costs and downtime, and
+          ensure the continuity of your printer.
+        </div>
+      </div>
+      <button onclick="contactusLInk()"
+        class="mt-6 bg-cyan-400 text-black font-semibold text-xs md:text-sm px-6 py-2 rounded shadow-md hover:bg-cyan-500 transition">
+        CONTACT FOR DOWNLOAD
+      </button>
+    </div>
+
+    <!-- Smart Printer Setup Plans -->
+    <div class="max-w-5xl mx-auto py-6 px-4 text-center">
+      <h3 class="text-orange-500 font-semibold text-base mb-4">
+        Smart Printer Setup
+        <span class="text-gray-700">
+          Plans
+        </span>
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white border border-gray-200 rounded shadow p-4 flex flex-col">
+          <img alt="Icon representing Smart Printer Setup Plan 1" class="mx-auto mb-2" height="40"
+            src="https://storage.googleapis.com/a1aa/image/9670991c-f539-4b53-c91e-eb6a4ec35f14.jpg" width="40" />
+          <h4 class="font-semibold text-sm mb-1">
+            Smart Printer Setup
+          </h4>
+          <p class="text-xs text-gray-700 mb-1">
+            1 Year Subscription
+          </p>
+          <p class="text-xs text-gray-700 mb-1">
+            $29.99 / Month
+          </p>
+          <p class="text-xs text-blue-600 mb-3 cursor-pointer underline">
+            Free trial for 7 days
+          </p>
+          <button onclick="contactusLInk()"
+            class="bg-cyan-400 text-black font-semibold text-xs py-1 rounded hover:bg-cyan-500 transition">
+            Contact Us
+          </button>
+        </div>
+        <div class="bg-white border border-gray-200 rounded shadow p-4 flex flex-col">
+          <img alt="Icon representing Smart Printer Setup Plan 2" class="mx-auto mb-2" height="40"
+            src="https://storage.googleapis.com/a1aa/image/d06fdb7f-840f-4b6c-764a-2a432eb086a9.jpg" width="40" />
+          <h4 class="font-semibold text-sm mb-1">
+            Smart Printer Setup
+          </h4>
+          <p class="text-xs text-gray-700 mb-1">
+            2 Year Subscription
+          </p>
+          <p class="text-xs text-gray-700 mb-1">
+            $25.99 / Month
+          </p>
+          <p class="text-xs text-blue-600 mb-3 cursor-pointer underline">
+            Free trial for 7 days
+          </p>
+          <button onclick="contactusLInk()"
+            class="bg-cyan-400 text-black font-semibold text-xs py-1 rounded hover:bg-cyan-500 transition">
+            Contact Us
+          </button>
+        </div>
+        <div class="bg-white border border-gray-200 rounded shadow p-4 flex flex-col">
+          <img alt="Icon representing Smart Printer Setup Plan 3" class="mx-auto mb-2" height="40"
+            src="https://storage.googleapis.com/a1aa/image/5f2984a1-2532-441f-f538-18fce1873b53.jpg" width="40" />
+          <h4 class="font-semibold text-sm mb-1">
+            Smart Printer Setup
+          </h4>
+          <p class="text-xs text-gray-700 mb-1">
+            3 Year Subscription
+          </p>
+          <p class="text-xs text-gray-700 mb-1">
+            $19.99 / Month
+          </p>
+          <p class="text-xs text-blue-600 mb-3 cursor-pointer underline">
+            Free trial for 7 days
+          </p>
+          <button onclick="contactusLInk()"
+            class="bg-cyan-400 text-black font-semibold text-xs py-1 rounded hover:bg-cyan-500 transition">
+            Contact Us
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 mt-6 text-xs text-gray-600">
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-check-circle text-blue-600">
+          </i>
+          <span>
+            Immediate Activation
+          </span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-check-circle text-blue-600">
+          </i>
+          <span>
+            30 day money back guarantee
+          </span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-check-circle text-blue-600">
+          </i>
+          <span>
+            Effortless subscription cancellation
+          </span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-check-circle text-blue-600">
+          </i>
+          <span>
+            24/7 Technical and Sales Help
+          </span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-check-circle text-blue-600">
+          </i>
+          <span>
+            Protected payment encryption
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Class-Leading Elements -->
+    <div class="max-w-6xl mx-auto py-10 px-4 text-center">
+      <h3 class="text-orange-500 font-semibold text-base mb-6">
+        Class-Leading
+        <span class="text-blue-600">
+          Elements
+        </span>
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-6 max-w-5xl mx-auto text-xs text-gray-700">
+        <div>
+          <i class="fas fa-laptop-code text-orange-500 text-2xl mb-2">
+          </i>
+          <h4 class="font-semibold mb-1">
+            Printer and Device Agnostic
+          </h4>
+          <p>
+            We support all printer technologies to deliver secure print environments and current driver DEVICE security.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-mobile-alt text-orange-500 text-2xl mb-2">
+          </i>
+          <h4 class="font-semibold mb-1">
+            Robust Mobile Apps
+          </h4>
+          <p>
+            Our iOS and Android mobile apps can bring print jobs to your device or any printer, which is based on the
+            latest mobile device technology.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-cloud text-orange-500 text-2xl mb-2">
+          </i>
+          <h4 class="font-semibold mb-1">
+            Advanced Remote Printing
+          </h4>
+          <p>
+            Cloud-enabled and clientless, our remote print solution is optimized for minimal connection latency and
+            bandwidth use.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-print text-orange-500 text-2xl mb-2">
+          </i>
+          <h4 class="font-semibold mb-1">
+            Smart Print Integration
+          </h4>
+          <p>
+            Seamless print job submission and routing for all print devices, including legacy printers, cloud, and apps.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-lock text-orange-500 text-2xl mb-2">
+          </i>
+          <h4 class="font-semibold mb-1">
+            Secure Print Release
+          </h4>
+          <p>
+            Fast and secure printing authentication to protect output and software to track and monitor document usage
+            and print jobs.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-headset text-orange-500 text-2xl mb-2">
+          </i>
+          <h4 class="font-semibold mb-1">
+            Robust MDM Support
+          </h4>
+          <p>
+            Integrate with leading MDM and EMM solutions to deliver print policies and controls for your mobile and
+            desktop devices.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compatibility Details -->
+    <div class="max-w-4xl mx-auto py-6 px-4 text-center">
+      <h3 class="text-orange-500 font-semibold text-base mb-6">
+        Compatibility
+        <span class="text-blue-600">
+          Details
+        </span>
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-xs text-white">
+        <div class="bg-blue-700 rounded px-4 py-2">
+          <h4 class="font-semibold mb-1">
+            Requirements
+          </h4>
+          <p>
+            Intel or AMD Processor, 4 GB RAM, 100 MB Free Disk Space
+          </p>
+        </div>
+        <div class="bg-blue-700 rounded px-4 py-2">
+          <h4 class="font-semibold mb-1">
+            Operating System
+          </h4>
+          <p>
+            Windows 7 or later, Mac OS, Windows 11, Android 12
+          </p>
+        </div>
+        <div class="bg-blue-700 rounded px-4 py-2">
+          <h4 class="font-semibold mb-1">
+            Supported Browser
+          </h4>
+          <p>
+            Google Chrome, Mozilla Firefox, Microsoft Edge
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 24/7 Professional Help -->
+    <div class="max-w-5xl mx-auto py-10 px-4 flex flex-col md:flex-row items-center gap-6">
+      <div class="md:w-1/3 text-center md:text-left">
+        <h3 class="text-blue-600 font-semibold text-sm mb-2">
+          24/7 Professional Help
+        </h3>
+        <h4 class="font-semibold text-xs mb-3">
+          Support When You Require It
+        </h4>
+        <p class="text-xs text-gray-700">
+          Our dedicated support team is available round the clock to help you with any software during the setup and
+          usage. Whether you prefer troubleshooting or need a problem to report, we're here to assist you anytime with a
+          human-generated professional and monitoring capability.
+          <br />
+          <br />
+          We offer a wide range of support options including phone, email, and live chat. Our team is trained to handle
+          all printer setup issues quickly and efficiently, ensuring minimal downtime and maximum productivity.
+        </p>
+        <button
+          class="mt-4 bg-cyan-400 text-black font-semibold text-xs px-6 py-2 rounded shadow-md hover:bg-cyan-500 transition">
+          <a href="index.html">
+            CONTACT FOR SUPPORT
+          </a>
+        </button>
+      </div>
+      <div class="md:w-2/3">
+        <img alt="Illustration of a support agent wearing a headset working on a laptop with chat icons around"
+          class="w-full max-w-md mx-auto" height="180"
+          src="https://storage.googleapis.com/a1aa/image/9f697b7d-dc13-4822-d7b5-cb88d30f9100.jpg" width="300" />
+      </div>
+    </div>
+
+    <!-- Order with Confidence -->
+    <div class="max-w-5xl mx-auto py-6 px-4 text-center">
+      <h3 class="text-orange-500 font-semibold text-base mb-6">
+        Order
+        <span class="text-gray-700">
+          with Confidence
+        </span>
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 max-w-4xl mx-auto text-xs text-gray-700">
+        <div>
+          <i class="fas fa-smile-beam text-blue-600 text-3xl mb-2">
+          </i>
+          <h4 class="font-semibold mb-1">
+            Assured Satisfaction
+          </h4>
+          <p>
+            Enjoy guaranteed customer satisfaction and 30-day risk-free trial.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-headset text-blue-600 text-3xl mb-2">
+          </i>
+          <h4 class="font-semibold mb-1">
+            Premium Help
+          </h4>
+          <p>
+            Get expert support with no additional premium services.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-shield-alt text-blue-600 text-3xl mb-2">
+          </i>
+          <h4 class="font-semibold mb-1">
+            Trusted Security
+          </h4>
+          <p>
+            Our software is 100% virus and malware-free.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-lock text-blue-600 text-3xl mb-2">
+          </i>
+          <h4 class="font-semibold mb-1">
+            Secure Transactions
+          </h4>
+          <p>
+            All orders are fully secured with encrypted transactions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Happy Clients -->
+    <div class="max-w-5xl mx-auto py-10 px-4 text-center">
+      <h3 class="text-gray-700 font-semibold text-base mb-6">
+        Our
+        <span class="text-blue-600">
+          Happy Clients
+        </span>
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-xs text-gray-700">
+        <div class="bg-white border border-gray-200 rounded p-4 shadow-sm">
+          <div class="flex justify-center mb-2">
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+          </div>
+          <p>
+            "The PC Packard team resolved my 7-month problem with my printer. It is faster, more reliable, and easier to
+            use. I highly recommend their service."
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-4 shadow-sm">
+          <div class="flex justify-center mb-2">
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+          </div>
+          <p>
+            "We never thought configuring my new device was this easy. Thanks to PC Packard, the setup was seamless and
+            quick."
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded p-4 shadow-sm">
+          <div class="flex justify-center mb-2">
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+            <i class="fas fa-star text-yellow-400">
+            </i>
+          </div>
+          <p>
+            "PC Packard resolved all the major issues of my printer within minutes. Their team was professional and very
+            helpful."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white mt-12">
+
+    <div class="text-center text-xs py-4 border-t border-blue-500">
+      <span>
+        © 2023 PC Packard - All Rights Reserved
+      </span>
+      <span class="mx-4">
+        |
+      </span>
+      <a class="underline hover:text-gray-300" href="#">
+        Terms &amp; Conditions
+      </a>
+      <span class="mx-4">
+        |
+      </span>
+      <a class="underline hover:text-gray-300" href="#">
+        Privacy Policy
+      </a>
+    </div>
+  </footer>
+</body>
+<script>
+
+
+  function contactusLInk() {
+    window.location.href = 'index.html'
+  }
+
+  const carousel = document.getElementById('carousel');
+  const totalSlides = carousel.children.length;
+  let currentSlide = 0;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+</script>
+
+</html>
