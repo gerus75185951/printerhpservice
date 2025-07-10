@@ -20,24 +20,41 @@
 
 <body>
   <!-- Header -->
-  <header class="bg-[#1e293b] shadow-md flex items-center justify-between px-6 py-4">
-    <div class="flex items-center space-x-3">
-      <img src="https://storage.googleapis.com/a1aa/image/d5c27842-5f28-4f1b-0df9-1ad19c57b756.jpg" alt="HP Logo"
-        class="h-10 w-10" />
-      <h1 class="text-xl font-bold text-white tracking-wide">HP Printer Help Desk</h1>
+  <header class="bg-[#1e293b] shadow-md px-4 sm:px-6 py-4">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div class="flex items-center space-x-4">
+        <img src="https://storage.googleapis.com/a1aa/image/d5c27842-5f28-4f1b-0df9-1ad19c57b756.jpg" alt="HP Logo"
+          class="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover border-2 border-white shadow-md" />
+        <div>
+          <h1 class="text-xl sm:text-2xl font-bold text-white tracking-wide leading-tight">HP Printer Help Desk</h1>
+          <button onclick="callSupport()"
+            class="mt-1 sm:mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium transition duration-300 shadow">
+            📞 Call Now
+          </button>
+        </div>
+      </div>
+      <button onclick="callSupport()"
+        class="bg-gradient-to-r from-pink-600 to-red-500 hover:from-pink-700 hover:to-red-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-lg">
+        <i class="fas fa-phone-alt mr-2"></i> +1-888-123-4567
+      </button>
     </div>
-    <button onclick="callSupport()"
-      class="bg-gradient-to-r from-pink-600 to-red-500 hover:from-pink-700 hover:to-red-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-lg">
-      <i class="fas fa-phone-alt mr-2"></i> +1-888-123-4567
-    </button>
   </header>
 
   <!-- Hero Image -->
   <main class="max-w-6xl mx-auto mt-10 px-4">
-<img src="https://printersetup.org/wp-content/uploads/2023/10/HP-Printer-Setup.webp" alt="HP Printer Setup"
-  class="rounded-xl w-full h-[220px] sm:h-[280px] md:h-[350px]  object-cover shadow-lg" />
-
-    
+    <!-- Hero Section with Overlayed Text -->
+    <section class="relative w-full overflow-hidden mt-4">
+      <img src="https://printersetup.org/wp-content/uploads/2023/10/HP-Printer-Setup.webp" alt="HP Printer Setup"
+        class="rounded-xl w-full h-[220px] sm:h-[280px] md:h-[350px] object-cover shadow-lg" />
+      <div class="absolute top-1/2 left-6 -translate-y-1/2 bg-[#3a94e0]/90 p-6 rounded-lg max-w-md shadow-xl">
+        <h1 class="text-white font-extrabold text-xl sm:text-2xl leading-tight">
+          Welcome to HP Support
+        </h1>
+        <p class="text-white text-sm sm:text-base leading-relaxed mt-2">
+          Learn how to get your HP device repaired and where to check the status online.
+        </p>
+      </div>
+    </section>
     <!-- Glass Info Card -->
     <section class="mt-10 bg-white/5 backdrop-blur-md rounded-xl p-6 sm:p-10 shadow-xl border border-white/10">
       <h2 class="text-2xl sm:text-3xl font-extrabold text-center text-blue-300 mb-6">
