@@ -4,145 +4,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HP Printer Support</title>
+  <title>HP Printer Support | Instant Help</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
     body {
       font-family: 'Inter', sans-serif;
-      background: #0f172a;
-      color: #f8fafc;
+      background-color: #0f172a;
     }
   </style>
 </head>
 
-<body>
+<body class="text-white">
+
   <!-- Header -->
-  <header class="bg-[#1e293b] shadow-md px-4 sm:px-6 py-4">
-    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-      <div class="flex items-center space-x-4">
-        <img src="https://storage.googleapis.com/a1aa/image/d5c27842-5f28-4f1b-0df9-1ad19c57b756.jpg" alt="HP Logo"
-          class="h-12 w-12 sm:h-14 sm:w-14 rounded-full object-cover border-2 border-white shadow-md" />
-        <div>
-          <h1 class="text-xl sm:text-2xl font-bold text-white tracking-wide leading-tight">HP Printer Help Desk</h1>
-       
-        </div>
+  <header class="bg-[#1e293b] px-4 py-3 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
+      <div class="flex items-center gap-3">
+        <img src="https://storage.googleapis.com/a1aa/image/d5c27842-5f28-4f1b-0df9-1ad19c57b756.jpg" alt="HP Logo" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white shadow" />
+        <h1 class="text-lg sm:text-xl font-bold tracking-wide text-cyan-400">HP Printer Support</h1>
       </div>
       <button onclick="callSupport()"
-        class="bg-gradient-to-r from-pink-600 to-red-500 hover:from-pink-700 hover:to-red-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-lg">
+        class="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white px-4 sm:px-5 py-1.5 sm:py-2 text-sm sm:text-base rounded-full font-semibold shadow-md transition duration-300">
         <i class="fas fa-phone-alt mr-2"></i> +1-855-535-4932
       </button>
     </div>
   </header>
 
-  <!-- Hero Image -->
-  <main class="max-w-6xl mx-auto mt-10 px-4">
-  
-
-    <!-- Hero Section with Overlayed Text -->
-    <section class="relative w-full overflow-hidden mt-4">
-      <img src="https://printersetup.org/wp-content/uploads/2023/10/HP-Printer-Setup.webp" alt="HP Printer Setup"
-        class="rounded-xl w-full h-[220px] sm:h-[280px] md:h-[350px] object-cover shadow-lg" />
-      <div class="absolute top-1/2 left-6 -translate-y-1/2 bg-[#3a94e0]/90 p-6 rounded-lg max-w-md shadow-xl">
-        <h1 class="text-white font-extrabold text-xl sm:text-2xl leading-tight">
-          Welcome to HP Support
-        </h1>
-        <p class="text-white text-sm sm:text-base leading-relaxed mt-2">
-          Learn how to get your HP device repaired and where to check the status online.
-        </p>
-      </div>
-    </section>
-
-    <!-- Mid-Section Call to Action -->
-    <div class="text-center mt-2 sm:mt-5">
-
-        <button onclick="callSupport()"
-        class="bg-blue-600 hover:bg-blue-700  text-white px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-lg">
-        <i class="fas fa-phone-alt mr-2"></i>  +1-855-535-4932
-      </button>
+  <!-- Hero Section -->
+  <section class="relative w-full mt-6 max-w-7xl mx-auto px-4">
+    <img src="https://www.ricoh.com/-/media/Ricoh/Sites/com/products/mfp/always-current-technology/img/img_related_links01.jpg?rev=656ebfc646184e318658d0c159a40a87&sc_lang=ja-JP&h=311&w=622&la=ja-JP&hash=8F441C328AD0C5FA46C40876D20D4F5E" alt="Printer"
+      class="rounded-xl w-full h-[200px] sm:h-[300px] md:h-[380px] object-cover shadow-lg" />
+    <div class="absolute top-1/2 left-4 sm:left-6 -translate-y-1/2 bg-indigo-600/90 p-4 sm:p-6 rounded-xl max-w-[90%] sm:max-w-md shadow-lg">
+      <h2 class="text-lg sm:text-2xl font-bold text-white">Reliable HP Printer Help</h2>
+      <p class="mt-2 text-xs sm:text-sm text-gray-100">Facing issues with your HP Printer? Get expert guidance anytime.</p>
     </div>
+  </section>
 
-    <!-- Glass Info Card -->
-    <section class="mt-5 bg-white/5 backdrop-blur-md rounded-xl p-6 sm:p-10 shadow-xl border border-white/10">
-      <h2 class="text-2xl sm:text-3xl font-extrabold text-center text-blue-300 mb-6">
-        24/7 Expert Support for Your HP Printer
-      </h2>
+  <!-- CTA Button -->
+  <div class="text-center mt-6">
+    <button onclick="callSupport()" class="bg-cyan-600 hover:bg-cyan-700 px-5 py-2 text-sm sm:text-base rounded-full text-white font-semibold shadow-md transition duration-300">
+      <i class="fas fa-phone-alt mr-2"></i> Call Now: +1-855-535-4932
+    </button>
+  </div>
 
-      <div class="space-y-6 text-base text-slate-200">
-        <div>
-          <p class="text-lg font-semibold text-white mb-1"><span class="mr-2">🔧</span> Installation & Setup</p>
-          <ul class="list-disc list-inside ml-5">
-            <li>Quick wired and wireless printer setup</li>
-            <li>Driver installation for PC, Mac, and mobile</li>
-            <li>Wi-Fi connection and smart configuration</li>
-          </ul>
-        </div>
+  <!-- Support Services -->
+  <section class="max-w-6xl mx-auto mt-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl px-5 sm:px-6 py-8 sm:py-10 shadow-xl">
+    <h2 class="text-2xl sm:text-3xl font-extrabold text-center text-sky-400 mb-6 sm:mb-8">What We Can Help You With</h2>
 
-        <div>
-          <p class="text-lg font-semibold text-white mb-1"><span class="mr-2">📠</span> Printing, Scanning & Faxing</p>
-          <ul class="list-disc list-inside ml-5">
-            <li>Troubleshooting scanning/printing issues</li>
-            <li>Ink cartridge, alignment, and print quality fixes</li>
-            <li>Help with paper jams and tray errors</li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="text-lg font-semibold text-white mb-1"><span class="mr-2">📲</span> Mobile & Cloud Printing</p>
-          <ul class="list-disc list-inside ml-5">
-            <li>HP Smart App setup</li>
-            <li>Mobile, USB, and Cloud print setup</li>
-            <li>Secure Bluetooth & LAN integration</li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="text-lg font-semibold text-white mb-1"><span class="mr-2">🛡️</span> Security & Performance</p>
-          <ul class="list-disc list-inside ml-5">
-            <li>Firmware & driver updates</li>
-            <li>Password setup & secure printing</li>
-            <li>Routine maintenance & diagnostics</li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="text-lg font-semibold text-white mb-2"><span class="mr-2">⭐</span> Why Choose Us?</p>
-          <ul class="list-disc list-inside ml-5 text-blue-300">
-            <li>Certified Printer Technicians</li>
-            <li>Remote & On-site Solutions</li>
-            <li>Same-day Support & Affordable Plans</li>
-            <li>Residential, Business & School Assistance</li>
-            <li>Data Privacy & 100% Satisfaction</li>
-          </ul>
-        </div>
-
-        <div class="text-center mt-8">
-          <button onclick="callSupport()"
-            class="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-3 rounded-full text-lg font-bold shadow-md transition duration-300">
-            📞 Talk to an Expert Now
-          </button>
-        </div>
+    <div class="space-y-6 text-slate-200 text-sm sm:text-base">
+      <div>
+        <h3 class="text-base sm:text-lg font-semibold text-white mb-1">🖥️ Printer Installation & Setup</h3>
+        <ul class="list-disc ml-5">
+          <li>Setup for wired & wireless printers</li>
+          <li>Driver installation (PC, Mac, mobile)</li>
+          <li>Wi-Fi & Smart Configuration</li>
+        </ul>
       </div>
-    </section>
 
-  </main>
+      <div>
+        <h3 class="text-base sm:text-lg font-semibold text-white mb-1">🛠️ Troubleshooting & Fixes</h3>
+        <ul class="list-disc ml-5">
+          <li>Paper jams, ink issues</li>
+          <li>Scan/Print/Alignment errors</li>
+          <li>Software & firmware glitches</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-base sm:text-lg font-semibold text-white mb-1">📱 Wireless & Mobile Printing</h3>
+        <ul class="list-disc ml-5">
+          <li>HP Smart App setup</li>
+          <li>Cloud & USB printing</li>
+          <li>LAN, Bluetooth configurations</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-base sm:text-lg font-semibold text-white mb-1">🚀 Speed & Security</h3>
+        <ul class="list-disc ml-5">
+          <li>Firmware updates & speed boost</li>
+          <li>Secure access & password locks</li>
+          <li>Device optimization</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-base sm:text-lg font-semibold text-white mb-1">🌟 Why Choose Us?</h3>
+        <ul class="list-disc ml-5 text-sky-300">
+          <li>24/7 Support Team</li>
+          <li>Certified HP Experts</li>
+          <li>Quick Remote Assistance</li>
+          <li>No Hidden Fees</li>
+          <li>Data Privacy Guaranteed</li>
+        </ul>
+      </div>
+
+      <div class="text-center mt-8">
+        <button onclick="callSupport()" class="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg rounded-full font-bold text-white shadow-md transition duration-300">
+          📞 Speak With a Technician Now
+        </button>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="mt-16 bg-[#1e293b] text-gray-400 text-xs px-6 py-6">
+  <footer class="mt-14 bg-[#1e293b] text-gray-400 text-xs sm:text-sm px-5 py-6">
     <div class="max-w-6xl mx-auto">
       <p class="mb-4">
         <strong>Disclaimer:</strong><br />
-        We are an independent third-party support provider not affiliated with HP. All logos and trademarks are the
-        property of their respective owners. Services offered are not official HP services.
+        We are an independent third-party support provider for HP Printers. We are not affiliated with HP. All trademarks are property of their respective owners.
       </p>
-      <nav class="space-y-1">
-        <a class="block underline hover:text-gray-200" href="#">. Home</a>
-        <a class="block underline hover:text-gray-200" href="#">. Contact</a>
-        <a class="block underline hover:text-gray-200" href="#">. Privacy Policy</a>
-        <a class="block underline hover:text-gray-200" href="#">. Terms of Use</a>
-      </nav>
+      <div class="flex flex-wrap gap-4">
+        <a href="#" class="underline hover:text-white">Home</a>
+        <a href="#" class="underline hover:text-white">Contact</a>
+        <a href="#" class="underline hover:text-white">Privacy Policy</a>
+        <a href="#" class="underline hover:text-white">Terms of Use</a>
+      </div>
     </div>
   </footer>
 
@@ -151,6 +131,6 @@
       window.location.href = 'tel:+1-855-535-4932';
     }
   </script>
-</body>
 
+</body>
 </html>
